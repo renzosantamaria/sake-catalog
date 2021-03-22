@@ -1,14 +1,25 @@
 <template>
   <div id="app">
+    <TheHeader />
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link> 
     </div>
     <router-view/>
   </div>
 </template>
+<script>
+import TheHeader from "@/components/TheHeader.vue";
+export default {
+  components:{
+    TheHeader
+  }
+}
+</script>
 
 <style lang="scss">
+*{
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
